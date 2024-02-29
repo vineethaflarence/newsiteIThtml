@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Student Template</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+    <style>
+        .container{
+            text-align: center;
+            margin:0 auto;
+        }
+        .logo {
+            width: 200px;
+            height: 100px;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 10px 20px;
+        }
+        .nav-link:hover{
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px;
+        }
+.it_service_img{
+    width:200px;
+    height:100px;
+    width: 100%;
+    display: inline-flex;
+}
+.nav-link1 {
+            color:black ;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .navbar-nav .dropdown-menu {
+           display:none;
+            padding:10px;
+            margin:10px;
+
+       
+        }
+    
+      .navbar-nav .nav-item:hover .dropdown-menu {
+            display: inline-block;
+            padding:10px;
+            margin:10px;
+            text-decoration: none;
+            
+        }
+.main-menu{
+    color:black;
+    margin-left:20px ;
+    padding:10px;
+    margin-right:20px ;
+    font-size:15px;
+    font-weight: 500;
+    text-wrap:wrap;
+    cursor: pointer;
+    
+
+}
+.content-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .heading{
+            color:rgb(0, 29, 71);
+            text-align:center;
+        }
+        .line{
+            width: 200px;
+    height: 2px;
+    border: 2px solid rgb(255, 208, 0);
+    margin: 0 auto;
+        }
+        .line1{
+            width: 200px;
+    height: 1px;
+    border: 1px solid black;
+    margin: 0 auto;
+        }
+        ul.timings {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+ul.timings li {
+    text-align: center; /* Center the text within list items */
+    padding: 10px 0; /* Add vertical spacing */
+}
+ul.services li {
+    text-align: left; /* Center the text within list items */
+    padding: 10px 0; /* Add vertical spacing */
+    color:black;
+}
+.info{
+    color:black;
+    margin-top: 20px;
+    font-size:15px;
+  
+}
+
+.card{
+    margin-bottom: 20px;
+    margin:20px;
+    padding:20px;
+    width:300px;
+}
+
+.menu_dropdown{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.menu_dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown{
+margin:0 auto;
+}
+    </style>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 29, 71);">
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#"><img src="iiit_logo_white.png" class="logo"></a>
+        <div class="collapse navbar-collapse text-center" id="myNavbar">
+            <ul class="navbar-nav menu mx-auto text-align:left">
+                <li class="nav-item"><a id="home-link" class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a id="about-link" class="nav-link" href="#about" >About</a></li>
+                <li class="nav-item"><a id="research-link" class="nav-link"  href="#service-desk" >IT Service Desk</a></li>
+                <li class="nav-item"><a id="event-link" class="nav-link" href="#event">Networking</a></li>
+                <li class="nav-item"><a id="teaching-link" class="nav-link" href="#teaching" >Software</a></li>
+                <li class="nav-item"><a id="talks-link" class="nav-link" href="#talks" >Moddle(LMS)</a></li>
+            </ul>
+                
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:rgb(218, 192, 81);height:100px;">
+        <a class="navbar-brand" href="#"><img src="it2.png" style="width:150px;height:100px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Getting Started
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#what-to-bring">What to bring</a>
+                <a class="dropdown-item" href="#Institute-account">Your Institute Account</a>
+                <a class="dropdown-item" href="#get-online">Getting Online</a>
+                <a class="dropdown-item" href="#getting-on-email">Getting onto Email</a>
+                <a class="dropdown-item" href="#get-help">Getting Help</a>
+                <a class="dropdown-item" href="#free-help">Free from IT Services</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--<nav class="navbar navbar-expand-lg" style="background-color: white;">
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#myNavbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#"><img src="it2.png" class="it_service_img"></a>
+        <div class="collapse navbar-collapse text-center" id="myNavbar1">
+            <ul class="navbar-nav menu mx-auto text-align:left">
+                <li class="nav-item dropdown">
+                <a id="home-link" class="nav-link1" href="#getting-started" data-toggle="dropdown" onclick="toggleDropdown('menu_dropdown1')">Getting Started &nbsp;<i class="fa fa-sort-desc" onclick="Dropdown_shutdown()"  aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown1" style="width:300px;padding:10px;">
+                        <li class="sub-nav-item"><a href="#what-to-bring" onclick="closeDropdown()" class="main-menu" >What to bring</a></li>
+                        <li class="sub-nav-item"><a href="#Institute-account" onclick="closeDropdown()" class="main-menu">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#get-online"onclick="closeDropdown()" class="main-menu" >Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#getting-on-email"  class="main-menu" > Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#get-help" onclick="closeDropdown()" class="main-menu">Getting Help</a></li>
+                        <li class="sub-nav-item"><a href="#free-help" onclick="closeDropdown()"  class="main-menu">Free from IT Services</a></li>
+                    </ul>
+                  
+            
+            </li>
+                <li class="nav-item dropdown">
+                    <a id="about-link" class="nav-link1" href="#it-service.html" data-toggle="dropdown"  onclick="closeDropdown('menu_dropdown1')">IT Service Desk&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown2">
+                        <li class="sub-nav-item"><a href="#" onclick="closeDropdown()" style="color:black;">IT Support</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">How to access email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Password Reset</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">How to Setup VPN Connectivity</a></li>  
+                    </ul>
+                  
+            
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="research-link" class="nav-link1" href="#research" onclick="networking()">Networking&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown3">
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        <li class="sub-nav-item"><a href="#what-to-bring" style="color:black;">What to do</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a id="event-link" class="nav-link1" href="#whattodo" onclick="whattodo()">What to do&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown4">
+                        <li class="sub-nav-item"><a href="#" style="color:black;">What to bring</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">What to do</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a id="teaching-link" class="nav-link1" href="#software" onclick="software()">Software&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown5">
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">What to do</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a id="talks-link" class="nav-link1" href="faq.html" onclick="fqa()">FAQ</a>
+                  </li>
+            </ul>
+                
+        </div>
+    </nav>-->
+    <div id="content-area">
+        <!-- Content for the cards will be displayed here -->
+      </div>
+    <div class="container It-service-container"  id="getting-started">
+        <div class="home-conatiner row justify-content-center text-center" >
+            <div class="col-md-12 col-sm-12 mt-5">
+                <h1 class="heading">Getting Started</h1>
+                <div class="line"></div>
+                <br>
+                <h1 style="font-size:18px;">Welcome to IIIT hyderabad. Get going quickly with these tips</h1>
+                <p>If you’ve just joined the Institute, whether you’re a student or a new member of staff, we have guidance to help you get set up with all your basic IT needs, such as email and internet access. We’ll also introduce you to the other IT services we offer that can help you make your work or study easier.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mt-5">
+                                <div class="card h-100  text-center" onclick="what_to_bring_card()">
+                                    <br>
+                                    <i class="fa fa-briefcase" style="font-size: 3em;"></i>
+                                    <br>
+                                    <p><strong>What to bring</strong></p>
+                                    <p><strong>Step 1:</strong> Find out what IT equipment you need to bring as a new student.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mt-5"> 
+                                <div class="card h-100 text-center" onclick="Institute_account_card()">
+                                    <br>
+                                    <i class="fa fa-address-card " style="font-size: 3em;"></i>
+                                    <br>
+                                    <p><strong>Your Institute accounts</strong></p>
+                                    <p><strong>Step 2:</strong> Find out about your IIIT accounts and how to set them up.</p>
+                                </div>
+                            </div>
+                    <div class="col-md-4 col-sm-6 mt-5">                          
+                                <div class= "card h-100  text-center" onclick="get_online_card()">
+                                    <br>
+                                    <i class="fa fa-link " style="font-size: 3em;"></i>
+                                    <br>
+                                    <p><strong>Getting Online</strong></p>
+                                    <p><strong>Step 3:</strong> How to get onto the internet at the Institute:in your college and department,or even in the Institue.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mt-5"> 
+                                <div class="card h-100  text-center" onclick="getting_on_email_card()">
+                                    <br>
+                                    <i class="fa fa-envelope " style="font-size: 3em;"></i>
+                                    <br>
+                                    <p><strong>Getting onto email</strong></p>
+                                    <p><strong>Step 4:</strong> Get onto your email account and choose how to access messages.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mt-5"> 
+                                <div class="card h-100 text-center" onclick="get_help_card()">
+                                    <br>
+                                    <i class="fa-solid fa-circle-question " style="font-size: 3em;"></i>
+                                    <br>
+                                    <p><strong>Getting help</strong></p>
+                                    <p><strong>Step 5:</strong> Don't worry if you have problems; help is available at the Service Desk.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mt-5"> <!-- Changed from col-md-4 and col-sm-4 -->
+                                <div class="card h-100  text-center" onclick="free_help_card()">
+                                    <br>
+                                    <i class="fa-solid fa-signs-post" style="font-size: 3em;"></i>
+                                    <br>
+                                    <p><strong>Free from IT Services</strong></p>
+                                    <p><strong>Step 6:</strong>Explore the free services and facilities available to all Institute members.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+        </div>
+ 
+<div class="container what-to-bring-container"  id="what-to-bring">
+        <div class="home-conatiner row justify-content-center text-left" >
+            <div class="col-md-12 col-sm-12 mt-5">
+                <h1 class="heading">What To Bring</h1>
+                <div class="line"></div>
+                <br>
+                <h1 style="font-size:18px;">New student? Find out what tech you’ll need at IIIT</h1>
+                <p>If you’re a new student, find out what IT equipment you’ll need, what you need to bring yourself, and what is likely to be provided by the Institute.</p>
+                <h1 style="font-size:18px;">Do I need a computer of my own?</h1>
+                <p>Many students consider a laptop to be an essential piece of equipment for their studies. If you don't already have one and want some guidance on what to consider, please see our helpful IT equipment guide for students.<br>You can also check with your college about what they provide. Colleges, departments and libraries often provide computing facilities of some kind but specifications and availability vary. Individual colleges may also lend laptops to students who can’t afford to buy their own.</p>
+            <h1 style="font-size:18px;">What do most people bring?</h1>
+            <p>Almost all students bring at least one digital device to IIIT, mainly a laptop and/or a smartphone. Some students use a tablet, but you might find the on-screen keyboard less convenient for writing essays. E-book readers such as Kindle are also a good idea, especially if your course involves extensive reading, as many books are available in digital format free of charge.<br>There are no restrictions on the make, model, operating system or software of your digital devices, but individual departments may have specific recommendations and should let you know about these. For example, students reading science subjects are more likely to use software that runs on Unix/Linux systems.<br>If your subject involves specialist applications that need a lot of computing power, your department is likely to have a computer suite where you can use them.</p>
+            <h1 style="font-size: 18px;">What other accessories are useful?</h1>
+            <p>To participate in online tutorials and lectures you may find it useful to have a webcam, a set of headphones or possibly a combined headset (microphone and headphones). Your laptop may have a webcam and microphone built in, but check our IT equipment guide for students for more information.</p>
+            </div>
+        </div>
+    </div>
+<div class="container what-to-bring-container"  id="Institute-account">
+    <div class="home-conatiner row justify-content-center text-left" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Your Institutre Account</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:30px;font-weight:400">The accounts you’ll need to access different IT services</h1>
+            <p>You’ll hear a lot of terms relating to your various IT accounts when you join the Institute. Here’s a simple guide to the ones provided centrally, however you may also be given additional account details by your college or department in order to access local facilities.</p>
+            <h1 style="font-size:30px;font-weight:bold;">Your IIIT-H username</h1>
+            <br>
+            <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+            <p>Everyone at IIIT – staff and students – has an IIIT-H username. </p>
+            <h1 style="font-size:18px;font-weight: bold;">What does it do?</h1>
+            <p>Your IIIT username will form the basis of your various IT accounts – see details below.</p>
+            <h1 style="font-size: 18px;font-weight:bold;">What does it look like?</h1>
+            <p>IIIT usernames are usually in the format abcd1234: abcd refers to your primary college or department when you first join and 1234 is an identifying number.</p>
+            <h1 style="font-size: 18px;font-weight:bold;">How do I get it?</h1>
+            <p>You will be automatically assigned your IIIT username when you join the Institute.<br>If you’re a new student, we will send you your username and activation code by email once we’ve received (and processed) your Institute Card Form. We’ll send it to the personal address held for you on the Institute record, so please ensure the Institute has a working personal email address for you. <br>If you are an undergraduate, you should make sure your email address is up-to-date on UCAS. If you are a graduate student, you should make sure your email address is up-to-date on the Graduate Applicant Self Service. Otherwise, the details will be sent by internal mail to your main Institute address.<br>If you are a member of staff, you will receive details of your IIIT username from HR.  </p>
+        <br>
+        <h1 style="font-size:30px;font-weight:bold">Your Single Sign-On account</h1>
+        <br>
+        <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+        <p>Everyone at the Institute – staff and students. </p>
+        <h1 style="font-size:18px;font-weight:bold;">What does it do?</h1>
+        <p>A lot! The Institute’s Single Sign-On (SSO) system means that you can use the same account details to log on to many different services.
+            Your SSO details will let you authenticate to lots of systems (that is, prove you are you), as long as you have an account on that system. Some of the most commonly used are email, Office 365 tools (aka Nexus365) and the virtual learning environment, but there are many more, depending on your role at the Institute. </p>
+        <h1 style="font-size:18px;font-weight:bold;">What does it look like?</h1>
+        <p>Your SSO account comprises:</p>
+        <ul>
+            <li>your IIIT username, which is given to you when you join</li>
+            <li>your SSO password, which you choose yourself</li>
+            <li>multi-factor authentication (MFA), which is added when your account is created - see related link on the right of this page</li>
+        </ul>
+        <h1 style="font-size:18px;font-weight:bold;">How do I get it?</h1>
+        <p>Your SSO account is created automatically for you, but you need to activate your account to complete the set-up. <br>You will need your activation code (sent via email, or given to you by your college or department), and either your student number or Institute card barcode number.<br>Follow these steps: </p>
+        <p>1. Go to the 'Manage your IIIT Single Sign-On account' page (see ‘Managing your accounts’ below)</p>
+        <p>2. Click ‘Activate a new account’</p>
+        <p>3. Follow the on-screen instructions to set a password and a security question and answer. You will be able to use the question and answer to reset your password if you should ever forget it </p>
+
+        <h1 style="font-size:30px;font-weight:bold">Your Remote Access account</h1>
+        <br>
+        <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+        <p>Anyone, staff or students, who needs to access Wi-Fi. </p>
+        <h1 style="font-size:18px;font-weight:bold;">What does it do?</h1>
+        <p>It allows you to get onto the Institute wireless network – you will need it to set yourself up on the eduroam Wi-Fi service. </p>
+        <h1 style="font-size:18px;font-weight:bold;">What does it look like?</h1>
+        <p>Your Remote Access login details comprise: </p>
+        <ul>
+            <li>your IIIT username </li>
+            <li>Click on ‘Register for a Remote Access (Eduroam WiFi/VPN) account’ </li>
+            <li>Follow the on-screen instructions</li>
+        </ul>
+        <h1 style="font-size:30px;font-weight:bold">Your CONNECT account</h1>
+        <br>
+        <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+        <p>Staff members who have a Managed Staff Desktop (CONNECT). This generally applies to people working in central administrative departments (UAS) as well as in  libraries.</p>
+        <h1 style="font-size:18px;font-weight:bold;">What does it do?</h1>
+        <p>Your CONNECT account lets you log onto the Institute network – on your work computer or, usefully, any other CONNECT computer in the Institute – and access the applications and files that you need to do your work.<br>It also allows access to the CONNECT remote desktop service once you have registered for it via a service request. </p>
+        <h1 style="font-size:18px;font-weight:bold;">What does it look like?</h1>
+        <p>Your CONNECT account comprises:</p>
+        <ul>
+            <li>your IIIT username</li>
+            <li>your CONNECT password, which you choose yourself</li>
+        </ul>
+        <h1 style="font-size:18px;font-weight:bold;">How do I get it?</h1>
+        <p>When you arrive at the Institute, you will get a letter from the Service Desk with details of how to set up your CONNECT account.<br>Your line manager or administrator needs to request the account at least a week before you arrive. </p>
+        <h1 style="font-size:18px;font-weight:bold">Managing your accounts</h1>
+        <p>There are three systems for managing your accounts: Webauth, the Self Registration system and the CONNECT Password Manager. If you forget your password you can usually sort it out yourself without needing to contact the Service Desk.</p>
+        <h1 style="font-size:18px;font-weight:bold">Managing your IIIT Single Sign-On account</h1>   
+        <p>The Manage your IIIT Single Sign-On page is where you manage your IIIT username and your SSO account.<br>This is where you go to activate your SSO account and also to manage your account in future. For example, you can use it to change your password or to update the security question and answer which will help you reset a forgotten password.</p> 
+        <h1 style="font-size:18px;font-weight:bold;">Self-Registration system</h1>
+        <p>The Self-Registration system is where you go to manage your email address and your mailbox settings, or to register for a Remote Access account. It also lets you view the data about yourself in the Registration database.</p>
+        <h1 style="font-size:18px;font-weight:bold;">CONNECT Password Manager</h1>
+      <p>This is where you manage your CONNECT account. You access CONNECT Password Manager from a CONNECT desktop machine using the following steps:</p>
+      <ul>
+        <li>Click on ‘Change a password’ button</li>
+            <li>On the next screen click on Sign-in Option (you don’t actually have to change your password)</li>
+            <li>On the next screen, select the key icon on the right (with a tag on it)</li>
+            <li>This opens CONNECT Password Manager, where you can choose from several actions, including unlock your account, change your questions/answers and change or reset your password</li>
+      </ul>
+    </div>
+        </div>
+</div>
+<div class="container what-to-bring-container"  id="get-online">
+    <div class="home-conatiner row justify-content-center text-left" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Getting online</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:30px;font-weight: 400;">Ways to connect to the internet at IIIT</h1>
+            <p>There are various ways you can access the internet at the Institute.</p>
+            <h1 style="font-size:30px;font-weight: bold;">Wi-Fi</h1>
+            <p>The eduroam wireless service is the main way that most staff and students using mobile devices will connect to the internet (unless your college/department/accommodation offers their own wireless service). You will need to configure eduroam for each device that you use, but once you’ve done this you’ll be able to get online at IIIT and at other universities around the world.<br>Visit our how to connect to eduroam page to set up your Wi-Fi access. Additional information about getting online can be found on our connect to the internet page.</p>
+        <h1 style="font-size:30px;font-weight: bold;">Wired</h1>
+        <p>Most desktop machines in the Institute will have wired internet access. For some staff, such as those in Institute Administration and Services (UAS), this is provided by the Managed Staff Desktop (CONNECT) service. <br>Departments and colleges who do not use this service provide wired internet for their staff and students via systems managed by their local IT staff.<br>Wired internet access is also available from computer clusters located in libraries.</p>
+        
+        </div>
+    </div>
+</div>
+<div class="container what-to-bring-container"  id="getting-on-email">
+    <div class="home-conatiner row justify-content-center text-left" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Getting Onto email</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:30px;font-weight: 400;">How to get onto the Institute email service</h1>
+            <p>The Institute email service is called Nexus365 and is run by IT Services. You will be registered automatically for an account when you are issued with your Institute Card. (A few departments run their own email service, but everyone else will be registered automatically for a Nexus account.)</p>
+            <h1  style="font-size:30px;font-weight: bold;">How to access email</h1>
+            <p>1. Activate your Single Sign-On (SSO) account, if you haven’t done so already (we have a useful page which describes all your IIIT Institute accounts)</p>
+            <p>2.To find out your email address, go to the Self-Registration website and click on ‘User info’ in the left-hand sidebar</p>
+            <p>3.Access your email via the internet, by using the Outlook Web App (OWA), or using an email client (such as Outlook, Thunderbird, MAC Mail). You will need to configure this to work with Nexus365 - go to Use Nexus365 email for instructions on how to do this</p>
+        <h1 style="font-size:30px;font-weight: bold;">Bonus features</h1>
+        <p>Nexus365 provides an online calendar, which helps you schedule meetings with your colleagues.<br>It also gives you access to the other Office 365 tools that come with Nexus365, such as OneDrive and Teams.</p>
+        
+        </div>
+    </div>
+</div>
+<div class="container what-to-bring-container"  id="get-help">
+    <div class="home-conatiner row justify-content-center text-left" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Getting help</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:30px;font-weight: 400;">With computers, sometimes things go wrong - but help is at hand</h1>
+            <br>
+            <h1 style="font-size:20px;font-weight: bold;">Step 1: Self help</h1>
+            <p>Many problems have a fairly straightforward solution that you may be able to find yourself. This is always worth trying as it is often the quickest way to sort out your problem.</p>
+             <p>If your computer is still usable, try these ways to find help online:</p>
+             <ol>
+                <li>Check our Service status page, which reports major network or server faults </li>
+                <li>Use your computer's on-screen help system</li>
+                <li>Check your College IT pages – some list Frequently Asked Questions (FAQs)</li>
+                <li>Search the IT Services Help site, which has advice and information on topics such as email, passwords and connecting to the network.</li>
+                <li>Look on the software or hardware supplier's support web site</li>
+                <li>Try a general web search using a search engine. Typing the exact wording of an error message into Google (within double quotes) often finds a page outlining the problem and its solution</li>
+             </ol>
+             <h1 style="font-size:20px;font-weight: bold;">Step 2: College and departmental IT support</h1>
+            <p>If you can’t resolve the problem yourself, consult your college or departmental IT Support Staff. They will be familiar with local IT systems and will also know about any problems affecting the college or department network or servers.</p>
+            <h1 style="font-size:20px;font-weight: bold;">Step 3: Contact the IT Service Desk</h1>
+            <p>The central IT Service Desk provides technical support and advice to all members of the Institute on a whole range of IT problems.<br>To contact the Service Desk, phone them on 12345 (please have your Institute Card to hand). Telephone support is available 24/7. You can also log a support call online.</p>
+       
+        
+        </div>
+    </div>
+</div>
+<div class="container what-to-bring-container"  id="free-help">
+    <div class="home-conatiner row justify-content-center text-left" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Free from IT Services</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:30px;font-weight: 400;">Find out about free software, training, internet and more</h1>
+            <p>We offer many free services and facilities to all members of the Institute – staff and students.</p>
+            <br>
+            <h1 style="font-size:20px;font-weight: bold;">Software</h1>
+            <p>Free and low cost software is available for members of the Institute. Check out the full list of what’s available and how to obtain it. </p>
+             <h1 style="font-size:20px;font-weight: bold;">Learn</h1>
+            <p>You have free access to a vast online library of instructional videos covering the latest software and more through our online IT learning resources. We also offer free and low cost teacher-led courses.</p>
+            <h1 style="font-size:20px;font-weight: bold;">Protect</h1>
+            <p>You can install Sophos anti-virus software free of charge. <br>Check out the dedicated Information Security website for video guides, advice and the latest security news.</p>
+            <h1 style="font-size:20px;font-weight: bold;">Share</h1>
+            <p>Use Microsoft 365 (also known as Nexus365 at IIIT) resources including OneDrive for Business or Teams to share and collaborate. </p>
+            <h1 style="font-size:20px;font-weight: bold;">Connect</h1>
+            <p>Access free Wi-Fi via eduroam when in IIIT or when visiting other universities around the world. <br>When you are not in IIIT you can use our Virtual Private Network (VPN) service to reach restricted resources. </p>
+            <h1 style="font-size:20px;font-weight: bold;">Listen</h1>
+            <p>Free podcasts of lectures, talks and events on a wide range of topics are available.</p>
+            <p>Our lecture capture service means lecturers can record their sessions for revision and greater access. Recordings are normally accessed via the virtual learning environment for your course.</p>
+            <h1 style="font-size:20px;font-weight: bold;">Help</h1>
+            <p>You can get free IT support from your college or department. Our central Service Desk also offers free IT support and advice.</p>
+            <h1 style="font-size:20px;font-weight: bold;">Backup</h1>
+            <p>A central backup service is available to postgraduates and Institute staff.</p>
+            
+        
+        </div>
+    </div>
+</div>
+    <div class="container It-service-container" id="It-service">
+        <div class="home-conatiner row justify-content-center text-center">
+            <div class="col-md-12 col-sm-12 mt-5">
+                <h1 class="heading">IT Service Desk</h1>
+                <div class="line"></div>
+            </div>
+            <div class="d-flex flex-row justify-content-center text-center">
+            <div class="col-md-6 col-sm-12 mt-5" style="border:1px solid black;height:100%;width:100%;text-wrap:wrap;Padding:10px;">
+                <h2>Opening Hours</h2>
+                <div class="line1"></div>
+                <br>
+                <p>Monday to Saturday, <strong>10:00 to 17:00</strong></p>
+                <p>Email: <span>help@iiit.ac.in</span></p>
+                <p>Telephone: <span>040-66531305</span></p>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-5" style="border:1px solid black;height:100%;width:100%;text-wrap: wrap;Padding:10px;">
+                <h2>Services Offered</h2>
+                <div class="line1"></div>
+                <br>
+                <p class="info">Our friendly and supportive IT Service Desk team can assist with:</li>
+                    <li class="service-details" >Registration Issues (passwords, accounts, etc)</li>
+                    <li class="service-details">Computing Advice and Information</li>
+                    <li class="service-details">PC/Macintosh Support Service</li>
+                    <li class="service-details">Other Support Services for Personal devices</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+            <div class="col-md-12 col-sm-12 mt-5">
+                <h2>About IT Service Desk</h2>
+                <div class="line1"></div>
+                <p class="info">
+                    The IT Service Desk provides you with a friendly, helpful, and customer-focused point of contact for IT queries. It is the central hub for staff and students seeking help, advice, and support for all IT-related services. We offer expert support and advice to help you get the most out of our services.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+        
+   
+   
+</body>
+
+</html>
+

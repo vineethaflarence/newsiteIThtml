@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Student Template</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+    <style>
+        .container{
+            text-align: center;
+            margin:0 auto;
+        }
+        .logo {
+            width: 200px;
+            height: 100px;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 10px 20px;
+        }
+        .nav-link:hover{
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px;
+        }
+.it_service_img{
+    width:200px;
+    height:100px;
+    width: 100%;
+    display: inline-flex;
+}
+.nav-link1 {
+            color:black ;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .navbar-nav .dropdown-menu {
+           display:none;
+            padding:10px;
+            margin:10px;
+
+       
+        }
+      .navbar-nav .nav-item:hover .dropdown-menu {
+            display: inline-block;
+            padding:10px;
+            margin:10px;
+            text-decoration: none;
+            
+        }
+.main-menu{
+    color:black;
+    margin-left:20px ;
+    padding:10px;
+    margin-right:20px ;
+    font-size:15px;
+    font-weight: 500;
+    text-wrap:wrap;
+    cursor: pointer;
+}
+.content-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .heading{
+            color:rgb(0, 29, 71);
+            text-align:center;
+        }
+        .line{
+            width: 200px;
+    height: 2px;
+    border: 2px solid rgb(255, 208, 0);
+    margin: 0 auto;
+        }
+        .line1{
+            width: 200px;
+    height: 1px;
+    border: 1px solid black;
+    margin: 0 auto;
+        }
+        ul.timings {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+ul.timings li {
+    text-align: center; /* Center the text within list items */
+    padding: 10px 0; /* Add vertical spacing */
+}
+ul.services li {
+    text-align: left; /* Center the text within list items */
+    padding: 10px 0; /* Add vertical spacing */
+    color:black;
+}
+.info{
+    color:black;
+    margin-top: 20px;
+    font-size:15px;
+  
+}
+
+.card{
+    margin-bottom: 20px;
+    margin:20px;
+    padding:20px;
+    width:300px;
+}
+
+.menu_dropdown{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.menu_dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+    </style>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 29, 71);">
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#"><img src="iiit_logo_white.png" class="logo"></a>
+        <div class="collapse navbar-collapse text-center" id="myNavbar">
+            <ul class="navbar-nav menu mx-auto text-align:left">
+                <li class="nav-item"><a id="home-link" class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a id="about-link" class="nav-link" href="#about" >About</a></li>
+                <li class="nav-item"><a id="research-link" class="nav-link"  href="#service-desk" >IT Service Desk</a></li>
+                <li class="nav-item"><a id="event-link" class="nav-link" href="#event">Networking</a></li>
+                <li class="nav-item"><a id="teaching-link" class="nav-link" href="#teaching" >Software</a></li>
+                <li class="nav-item"><a id="talks-link" class="nav-link" href="#talks" >Moddle(LMS)</a></li>
+            </ul>
+                
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: white;">
+        <button class="navbar-toggler bg-da" type="button" data-toggle="collapse" data-target="#myNavbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#"><img src="it2.png" class="it_service_img"></a>
+        <div class="collapse navbar-collapse text-center" id="myNavbar1">
+            <ul class="navbar-nav menu mx-auto text-align:left">
+                <li class="nav-item dropdown">
+                <a id="home-link" class="nav-link1" href="#getting-started" data-toggle="dropdown" onclick="gettingstarted()">Getting Started &nbsp;<i class="fa fa-sort-desc" onclick="closeDropdown()" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown1" style="width:300px;padding:10px;">
+                        <li class="sub-nav-item"><a href="#what-to-bring" onclick="closeDropdown()" class="main-menu" >What to bring</a></li>
+                        <li class="sub-nav-item"><a href="#Institute-account"  onclick="closeDropdown()" class="main-menu">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#get-online" onclick="closeDropdown()" class="main-menu" >Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#getting-on-email" onclick="closeDropdown()" class="main-menu" > Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#get-help" onclick="closeDropdown()" class="main-menu">Getting Help</a></li>
+                        <li class="sub-nav-item"><a href="#free-help" onclick="closeDropdown()" class="main-menu">Free from IT Services</a></li>
+                    </ul>
+                  
+            
+            </li>
+                <li class="nav-item dropdown">
+                    <a id="about-link" class="nav-link1" href="#It-service" data-toggle="dropdown"  onclick="service()" >IT Service Desk&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown2">
+                        <li class="sub-nav-item"><a href="#" onclick="closeDropdown()" style="color:black;">IT Support</a></li>
+                        <li class="sub-nav-item"><a href="#" onclick="closeDropdown()" style="color:black;">How to access email</a></li>
+                        <li class="sub-nav-item"><a href="#" onclick="closeDropdown()" style="color:black;">Password Reset</a></li>
+                        <li class="sub-nav-item"><a href="#" onclick="closeDropdown()" style="color:black;">How to Setup VPN Connectivity</a></li>  
+                    </ul>
+                  
+            
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="research-link" class="nav-link1" href="#research" onclick="networking()">Networking&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown3">
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        <li class="sub-nav-item"><a href="#what-to-bring" style="color:black;">What to do</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a id="event-link" class="nav-link1" href="#whattodo" onclick="whattodo()">What to do&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown4">
+                        <li class="sub-nav-item"><a href="#" style="color:black;">What to bring</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">What to do</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a id="teaching-link" class="nav-link1" href="#software" onclick="software()">Software&nbsp;<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu" id="menu_dropdown5">
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">What to do</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Your Institute Account</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting onto Email</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Online</a></li>
+                        <li class="sub-nav-item"><a href="#" style="color:black;">Getting Help</a></li>
+                        
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a id="talks-link" class="nav-link1" href="faq.html" onclick="fqa()">FAQ</a>
+                  </li>
+            </ul>
+                
+        </div>
+    </nav>
+<div class="container It-service-container"  id="getting-started">
+    <div class="home-conatiner row justify-content-center text-center" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Getting Started</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:18px;">Welcome to IIIT hyderabad. Get going quickly with these tips</h1>
+            <p>If you’ve just joined the Institute, whether you’re a student or a new member of staff, we have guidance to help you get set up with all your basic IT needs, such as email and internet access. We’ll also introduce you to the other IT services we offer that can help you make your work or study easier.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mt-5">
+                            <div class="card h-100  text-center" onclick="what_to_bring_card()">
+                                <br>
+                                <i class="fa fa-briefcase" style="font-size: 3em;"></i>
+                                <br>
+                                <p><strong>What to bring</strong></p>
+                                <p><strong>Step 1:</strong> Find out what IT equipment you need to bring as a new student.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-5"> <!-- Changed from col-md-4 and col-sm-4 -->
+                            <div class="card h-100 text-center" onclick="Institute_account_card()">
+                                <br>
+                                <i class="fa fa-address-card " style="font-size: 3em;"></i>
+                                <br>
+                                <p><strong>Your Institute accounts</strong></p>
+                                <p><strong>Step 2:</strong> Find out about your IIIT accounts and how to set them up.</p>
+                            </div>
+                        </div>
+                <div class="col-md-4 col-sm-6 mt-5">                          
+                            <div class= "card h-100  text-center" onclick="get_online_card()">
+                                <br>
+                                <i class="fa fa-link " style="font-size: 3em;"></i>
+                                <br>
+                                <p><strong>Getting Online</strong></p>
+                                <p><strong>Step 3:</strong> How to get onto the internet at the Institute:in your college and department,or even in the Institue.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-5"> <!-- Changed from col-md-4 and col-sm-4 -->
+                            <div class="card h-100  text-center" onclick="getting_on_email_card()">
+                                <br>
+                                <i class="fa fa-envelope " style="font-size: 3em;"></i>
+                                <br>
+                                <p><strong>Getting onto email</strong></p>
+                                <p><strong>Step 4:</strong> Get onto your email account and choose how to access messages.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-5"> <!-- Changed from col-md-4 and col-sm-4 -->
+                            <div class="card h-100 text-center" onclick="get_help_card()">
+                                <br>
+                                <i class="fa-solid fa-circle-question " style="font-size: 3em;"></i>
+                                <br>
+                                <p><strong>Getting help</strong></p>
+                                <p><strong>Step 5:</strong> Don't worry if you have problems; help is available at the Service Desk.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mt-5"> <!-- Changed from col-md-4 and col-sm-4 -->
+                            <div class="card h-100  text-center" onclick="free_help_card()">
+                                <br>
+                                <i class="fa-solid fa-signs-post" style="font-size: 3em;"></i>
+                                <br>
+                                <p><strong>Free from IT Services</strong></p>
+                                <p><strong>Step 6:</strong>Explore the free services and facilities available to all Institute members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+    </div>
+</body>
+</html>

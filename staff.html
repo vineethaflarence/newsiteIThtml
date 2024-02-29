@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Student Template</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ 
+</head>
+<body style="background-color: white;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 29, 71);">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#"><img src="iiit_logo_white.png" style="width:200px;height:80px;"></a>
+    <div class="collapse navbar-collapse text-center" id="myNavbar">
+        <ul class="navbar-nav menu mx-auto text-align:left">
+            <li class="nav-item"><a id="home-link" class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a id="about-link" class="nav-link" href="faculty.html" >Faculty</a></li>
+            <li class="nav-item"><a id="research-link" class="nav-link" href="staff.html" >Staff</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" href="student.html">Student</a></li>
+            <!--<li class="nav-item"><a id="teaching-link" class="nav-link" href="#teaching" >Software</a></li>-->
+            <li class="nav-item"><a id="talks-link" class="nav-link" href="#contact" >Contact</a></li>
+        </ul>
+            
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(218, 192, 81); ">
+  <a class="navbar-brand" href="#"><img src="it2.png" style="width: 150px; height: 80px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item menu-item" onclick="menu1()">
+        <a class="nav-link " href="#getting-started" >
+          Getting Started
+        </a>
+      </li>
+      <li class="nav-item menu-item"  onclick="menu2()">
+        <a class="nav-link " href="#It-service">
+          IT Service
+        </a>
+      </li>
+      <li class="nav-item menu-item" onclick="menu3()" >
+        <a class="nav-link " href="#software">
+          Software
+        </a>
+      </li>
+      <li class="nav-item menu-item" onclick="menu4()">
+        <a class="nav-link" href="#mail-client">Mail Client </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container It-support-container"  id="getting-started" >
+    <div class="home-conatiner row justify-content-center text-center" >
+        <div class="col-md-12 col-sm-12 mt-5">
+            <h1 class="heading">Getting Started</h1>
+            <div class="line"></div>
+            <br>
+            <h1 style="font-size:20px;">Welcome to IIIT hyderabad. Get going quickly with these tips</h1>
+            <p>If you’ve just joined the Institute, whether you’re a student or a new member of staff, we have guidance to help you get set up with all your basic IT needs, such as email and internet access. We’ll also introduce you to the other IT services we offer that can help you make your work or study easier.</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 " >
+              <div class="card h-100 text-center" onclick="what_to_bring_card()">
+                <i class="fa fa-briefcase" style="font-size: 3em;"></i>
+                <p><strong>What to bring</strong></p>
+                <p><strong>Step 1:</strong> Find out what IT equipment you need to bring as a new student.</p>
+              </div>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class ="card h-100 text-center" onclick="Institute_account_card()">
+                <i class="fa fa-address-card" style="font-size: 3em;"></i>
+                <p><strong>Your Institute accounts</strong></p>
+                <p><strong>Step 2:</strong> Find out about your IIIT accounts and how to set them up.</p>
+              </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="card h-100 text-center" onclick="getting_online_card()">
+                <i class="fa fa-link" style="font-size: 3em;"></i>
+                <p><strong>Getting Online</strong></p>
+                <p><strong>Step 3:</strong> How to get onto the internet at the Institute: in your college and department, or even in the Institute.</p>
+              </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="card h-100 text-center" onclick="getting_onto_email_card()">
+                <i class="fa fa-envelope" style="font-size: 3em;"></i>
+                <p><strong>Getting onto email</strong></p>
+                <p><strong>Step 4:</strong> Get onto your email account and choose how to access messages.</p>
+              </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="card h-100 text-center" onclick="getting_help_card()">
+                <i class="fa-solid fa-circle-question" style="font-size: 3em;"></i>
+                <p><strong>Getting help</strong></p>
+                <p><strong>Step 5:</strong> Don't worry if you have problems; help is available at the Service Desk.</p>
+              </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+              <div class="card h-100 text-center" onclick="free_help_card()">
+                <i class="fa-solid fa-signs-post" style="font-size: 3em;"></i>
+                <p><strong>Free from IT Services</strong></p>
+                <p><strong>Step 6:</strong> Explore the free services and facilities available to all Institute members.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     </div>  
+</div>  
+<div class="container It-support-container"  id="what-to-bring"  >
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">What To Bring</h1>
+          <div class="line"></div>
+          <br>
+          <h1 style="font-size:18px;">New student? Find out what tech you’ll need at IIIT</h1>
+          <p>If you’re a new student, find out what IT equipment you’ll need, what you need to bring yourself, and what is likely to be provided by the Institute.</p>
+          <h1 style="font-size:18px;">Do I need a computer of my own?</h1>
+          <p>Many students consider a laptop to be an essential piece of equipment for their studies. If you don't already have one and want some guidance on what to consider, please see our helpful IT equipment guide for students.<br>You can also check with your college about what they provide. Colleges, departments and libraries often provide computing facilities of some kind but specifications and availability vary. Individual colleges may also lend laptops to students who can’t afford to buy their own.</p>
+      <h1 style="font-size:18px;">What do most people bring?</h1>
+      <p>Almost all students bring at least one digital device to IIIT, mainly a laptop and/or a smartphone. Some students use a tablet, but you might find the on-screen keyboard less convenient for writing essays. E-book readers such as Kindle are also a good idea, especially if your course involves extensive reading, as many books are available in digital format free of charge.<br>There are no restrictions on the make, model, operating system or software of your digital devices, but individual departments may have specific recommendations and should let you know about these. For example, students reading science subjects are more likely to use software that runs on Unix/Linux systems.<br>If your subject involves specialist applications that need a lot of computing power, your department is likely to have a computer suite where you can use them.</p>
+      <h1 style="font-size: 18px;">What other accessories are useful?</h1>
+      <p>To participate in online tutorials and lectures you may find it useful to have a webcam, a set of headphones or possibly a combined headset (microphone and headphones). Your laptop may have a webcam and microphone built in, but check our IT equipment guide for students for more information.</p>
+      </div>
+  </div>
+</div>
+<div class="container It-support-container"  id="Institute-account">
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">Your Institutre Account</h1>
+          <div class="line"></div>
+          <br>
+          <h1 style="font-size:30px;font-weight:400">The accounts you’ll need to access different IT services</h1>
+          <p>You’ll hear a lot of terms relating to your various IT accounts when you join the Institute. Here’s a simple guide to the ones provided centrally, however you may also be given additional account details by your college or department in order to access local facilities.</p>
+          <h1 style="font-size:30px;font-weight:bold;">Your IIIT-H username</h1>
+          <br>
+          <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+          <p>Everyone at IIIT – staff and students – has an IIIT-H username. </p>
+          <h1 style="font-size:18px;font-weight: bold;">What does it do?</h1>
+          <p>Your IIIT username will form the basis of your various IT accounts – see details below.</p>
+          <h1 style="font-size: 18px;font-weight:bold;">What does it look like?</h1>
+          <p>IIIT usernames are usually in the format abcd1234: abcd refers to your primary college or department when you first join and 1234 is an identifying number.</p>
+          <h1 style="font-size: 18px;font-weight:bold;">How do I get it?</h1>
+          <p>You will be automatically assigned your IIIT username when you join the Institute.<br>If you’re a new student, we will send you your username and activation code by email once we’ve received (and processed) your Institute Card Form. We’ll send it to the personal address held for you on the Institute record, so please ensure the Institute has a working personal email address for you. <br>If you are an undergraduate, you should make sure your email address is up-to-date on UCAS. If you are a graduate student, you should make sure your email address is up-to-date on the Graduate Applicant Self Service. Otherwise, the details will be sent by internal mail to your main Institute address.<br>If you are a member of staff, you will receive details of your IIIT username from HR.  </p>
+      <br>
+      <h1 style="font-size:30px;font-weight:bold">Your Single Sign-On account</h1>
+      <br>
+      <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+      <p>Everyone at the Institute – staff and students. </p>
+      <h1 style="font-size:18px;font-weight:bold;">What does it do?</h1>
+      <p>A lot! The Institute’s Single Sign-On (SSO) system means that you can use the same account details to log on to many different services.
+          Your SSO details will let you authenticate to lots of systems (that is, prove you are you), as long as you have an account on that system. Some of the most commonly used are email, Office 365 tools (aka Nexus365) and the virtual learning environment, but there are many more, depending on your role at the Institute. </p>
+      <h1 style="font-size:18px;font-weight:bold;">What does it look like?</h1>
+      <p>Your SSO account comprises:</p>
+      <ul>
+          <li>your IIIT username, which is given to you when you join</li>
+          <li>your SSO password, which you choose yourself</li>
+          <li>multi-factor authentication (MFA), which is added when your account is created - see related link on the right of this page</li>
+      </ul>
+      <h1 style="font-size:18px;font-weight:bold;">How do I get it?</h1>
+      <p>Your SSO account is created automatically for you, but you need to activate your account to complete the set-up. <br>You will need your activation code (sent via email, or given to you by your college or department), and either your student number or Institute card barcode number.<br>Follow these steps: </p>
+      <p>1. Go to the 'Manage your IIIT Single Sign-On account' page (see ‘Managing your accounts’ below)</p>
+      <p>2. Click ‘Activate a new account’</p>
+      <p>3. Follow the on-screen instructions to set a password and a security question and answer. You will be able to use the question and answer to reset your password if you should ever forget it </p>
+
+      <h1 style="font-size:30px;font-weight:bold">Your Remote Access account</h1>
+      <br>
+      <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+      <p>Anyone, staff or students, who needs to access Wi-Fi. </p>
+      <h1 style="font-size:18px;font-weight:bold;">What does it do?</h1>
+      <p>It allows you to get onto the Institute wireless network – you will need it to set yourself up on the eduroam Wi-Fi service. </p>
+      <h1 style="font-size:18px;font-weight:bold;">What does it look like?</h1>
+      <p>Your Remote Access login details comprise: </p>
+      <ul>
+          <li>your IIIT username </li>
+          <li>Click on ‘Register for a Remote Access (Eduroam WiFi/VPN) account’ </li>
+          <li>Follow the on-screen instructions</li>
+      </ul>
+      <h1 style="font-size:30px;font-weight:bold">Your CONNECT account</h1>
+      <br>
+      <h1 style="font-size:18px;font-weight:bold;">Who is it for?</h1>
+      <p>Staff members who have a Managed Staff Desktop (CONNECT). This generally applies to people working in central administrative departments (UAS) as well as in  libraries.</p>
+      <h1 style="font-size:18px;font-weight:bold;">What does it do?</h1>
+      <p>Your CONNECT account lets you log onto the Institute network – on your work computer or, usefully, any other CONNECT computer in the Institute – and access the applications and files that you need to do your work.<br>It also allows access to the CONNECT remote desktop service once you have registered for it via a service request. </p>
+      <h1 style="font-size:18px;font-weight:bold;">What does it look like?</h1>
+      <p>Your CONNECT account comprises:</p>
+      <ul>
+          <li>your IIIT username</li>
+          <li>your CONNECT password, which you choose yourself</li>
+      </ul>
+      <h1 style="font-size:18px;font-weight:bold;">How do I get it?</h1>
+      <p>When you arrive at the Institute, you will get a letter from the Service Desk with details of how to set up your CONNECT account.<br>Your line manager or administrator needs to request the account at least a week before you arrive. </p>
+      <h1 style="font-size:18px;font-weight:bold">Managing your accounts</h1>
+      <p>There are three systems for managing your accounts: Webauth, the Self Registration system and the CONNECT Password Manager. If you forget your password you can usually sort it out yourself without needing to contact the Service Desk.</p>
+      <h1 style="font-size:18px;font-weight:bold">Managing your IIIT Single Sign-On account</h1>   
+      <p>The Manage your IIIT Single Sign-On page is where you manage your IIIT username and your SSO account.<br>This is where you go to activate your SSO account and also to manage your account in future. For example, you can use it to change your password or to update the security question and answer which will help you reset a forgotten password.</p> 
+      <h1 style="font-size:18px;font-weight:bold;">Self-Registration system</h1>
+      <p>The Self-Registration system is where you go to manage your email address and your mailbox settings, or to register for a Remote Access account. It also lets you view the data about yourself in the Registration database.</p>
+      <h1 style="font-size:18px;font-weight:bold;">CONNECT Password Manager</h1>
+    <p>This is where you manage your CONNECT account. You access CONNECT Password Manager from a CONNECT desktop machine using the following steps:</p>
+    <ul>
+      <li>Click on ‘Change a password’ button</li>
+          <li>On the next screen click on Sign-in Option (you don’t actually have to change your password)</li>
+          <li>On the next screen, select the key icon on the right (with a tag on it)</li>
+          <li>This opens CONNECT Password Manager, where you can choose from several actions, including unlock your account, change your questions/answers and change or reset your password</li>
+    </ul>
+  </div>
+      </div>
+</div>
+<div class="container It-support-container"  id="get-online"  >
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">Getting online</h1>
+          <div class="line"></div>
+          <br>
+          <h1 style="font-size:30px;font-weight: 400;">Ways to connect to the internet at IIIT</h1>
+          <p>There are various ways you can access the internet at the Institute.</p>
+          <h1 style="font-size:30px;font-weight: bold;">Wi-Fi</h1>
+          <p>The eduroam wireless service is the main way that most staff and students using mobile devices will connect to the internet (unless your college/department/accommodation offers their own wireless service). You will need to configure eduroam for each device that you use, but once you’ve done this you’ll be able to get online at IIIT and at other universities around the world.<br>Visit our how to connect to eduroam page to set up your Wi-Fi access. Additional information about getting online can be found on our connect to the internet page.</p>
+      <h1 style="font-size:30px;font-weight: bold;">Wired</h1>
+      <p>Most desktop machines in the Institute will have wired internet access. For some staff, such as those in Institute Administration and Services (UAS), this is provided by the Managed Staff Desktop (CONNECT) service. <br>Departments and colleges who do not use this service provide wired internet for their staff and students via systems managed by their local IT staff.<br>Wired internet access is also available from computer clusters located in libraries.</p>
+      
+      </div>
+  </div>
+</div>
+<div class="container It-support-container"  id="getting-on-email" >
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">Getting Onto email</h1>
+          <div class="line"></div>
+          <br>
+          <h1 style="font-size:30px;font-weight: 400;">How to get onto the Institute email service</h1>
+          <p>The Institute email service is called Nexus365 and is run by IT Services. You will be registered automatically for an account when you are issued with your Institute Card. (A few departments run their own email service, but everyone else will be registered automatically for a Nexus account.)</p>
+          <h1  style="font-size:30px;font-weight: bold;">How to access email</h1>
+          <p>1. Activate your Single Sign-On (SSO) account, if you haven’t done so already (we have a useful page which describes all your IIIT Institute accounts)</p>
+          <p>2.To find out your email address, go to the Self-Registration website and click on ‘User info’ in the left-hand sidebar</p>
+          <p>3.Access your email via the internet, by using the Outlook Web App (OWA), or using an email client (such as Outlook, Thunderbird, MAC Mail). You will need to configure this to work with Nexus365 - go to Use Nexus365 email for instructions on how to do this</p>
+      <h1 style="font-size:30px;font-weight: bold;">Bonus features</h1>
+      <p>Nexus365 provides an online calendar, which helps you schedule meetings with your colleagues.<br>It also gives you access to the other Office 365 tools that come with Nexus365, such as OneDrive and Teams.</p>
+      
+      </div>
+  </div>
+</div>
+<div class="container It-support-container"  id="get-help" >
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">Getting help</h1>
+          <div class="line"></div>
+          <br>
+          <h1 style="font-size:30px;font-weight: 400;">With computers, sometimes things go wrong - but help is at hand</h1>
+          <br>
+          <h1 style="font-size:20px;font-weight: bold;">Step 1: Self help</h1>
+          <p>Many problems have a fairly straightforward solution that you may be able to find yourself. This is always worth trying as it is often the quickest way to sort out your problem.</p>
+           <p>If your computer is still usable, try these ways to find help online:</p>
+           <ol>
+              <li>Check our Service status page, which reports major network or server faults </li>
+              <li>Use your computer's on-screen help system</li>
+              <li>Check your College IT pages – some list Frequently Asked Questions (FAQs)</li>
+              <li>Search the IT Services Help site, which has advice and information on topics such as email, passwords and connecting to the network.</li>
+              <li>Look on the software or hardware supplier's support web site</li>
+              <li>Try a general web search using a search engine. Typing the exact wording of an error message into Google (within double quotes) often finds a page outlining the problem and its solution</li>
+           </ol>
+           <h1 style="font-size:20px;font-weight: bold;">Step 2: College and departmental IT support</h1>
+          <p>If you can’t resolve the problem yourself, consult your college or departmental IT Support Staff. They will be familiar with local IT systems and will also know about any problems affecting the college or department network or servers.</p>
+          <h1 style="font-size:20px;font-weight: bold;">Step 3: Contact the IT Service Desk</h1>
+          <p>The central IT Service Desk provides technical support and advice to all members of the Institute on a whole range of IT problems.<br>To contact the Service Desk, phone them on 12345 (please have your Institute Card to hand). Telephone support is available 24/7. You can also log a support call online.</p>
+     
+      
+      </div>
+  </div>
+</div>
+<div class="container It-support-container"  id="free-help" >
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">Free from IT Services</h1>
+          <div class="line"></div>
+          <br>
+          <h1 style="font-size:30px;font-weight: 400;">Find out about free software, training, internet and more</h1>
+          <p>We offer many free services and facilities to all members of the Institute – staff and students.</p>
+          <br>
+          <h1 style="font-size:20px;font-weight: bold;">Software</h1>
+          <p>Free and low cost software is available for members of the Institute. Check out the full list of what’s available and how to obtain it. </p>
+           <h1 style="font-size:20px;font-weight: bold;">Learn</h1>
+          <p>You have free access to a vast online library of instructional videos covering the latest software and more through our online IT learning resources. We also offer free and low cost teacher-led courses.</p>
+          <h1 style="font-size:20px;font-weight: bold;">Protect</h1>
+          <p>You can install Sophos anti-virus software free of charge. <br>Check out the dedicated Information Security website for video guides, advice and the latest security news.</p>
+          <h1 style="font-size:20px;font-weight: bold;">Share</h1>
+          <p>Use Microsoft 365 (also known as Nexus365 at IIIT) resources including OneDrive for Business or Teams to share and collaborate. </p>
+          <h1 style="font-size:20px;font-weight: bold;">Connect</h1>
+          <p>Access free Wi-Fi via eduroam when in IIIT or when visiting other universities around the world. <br>When you are not in IIIT you can use our Virtual Private Network (VPN) service to reach restricted resources. </p>
+          <h1 style="font-size:20px;font-weight: bold;">Listen</h1>
+          <p>Free podcasts of lectures, talks and events on a wide range of topics are available.</p>
+          <p>Our lecture capture service means lecturers can record their sessions for revision and greater access. Recordings are normally accessed via the virtual learning environment for your course.</p>
+          <h1 style="font-size:20px;font-weight: bold;">Help</h1>
+          <p>You can get free IT support from your college or department. Our central Service Desk also offers free IT support and advice.</p>
+          <h1 style="font-size:20px;font-weight: bold;">Backup</h1>
+          <p>A central backup service is available to postgraduates and Institute staff.</p>
+          
+      
+      </div>
+  </div>
+</div>
+  
+
+<div class="container It-support-container"  id="It-service">
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">IT Service</h1>
+          <div class="line"></div>
+          <br>
+          <ul>
+            <li>Opening Hours:&nbsp;&nbsp; Monday to Saturday, <strong>10:00 to 17:00</strong></li>
+            <li>Email:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;help@iiit.ac.in</li>
+            <li>Telephone:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 040-66531305</li>
+           
+          </ul>
+          <p>The IT Service Desk provides you with a friendly, helpful and customer focused point of contact for IT queries. The IT Service Desk is the central point of contact for staff and students seeking help, advice and support for all IT related services. We offer expert support and advice to help you get the most out of our services.</p>
+      <p>Our friendly and supportive IT Service Desk team can assist with:</p>
+      <ul>
+          <li>Registration Issues (passwords, accounts etc)</li>
+          <li>Computing Advice and Information</li>
+          <li>PC/Macintosh Support Service</li>
+          <li>Other Support Services for Personal devices</li>
+      </ul>
+      </div>
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5 " >
+            <div class="card h-100 text-center" onclick="It_support_card()">
+              <i ><img src="pic3.png" style="width: 3em; height: 3em;"></i>
+              <br>
+              <p><strong>IT Support</strong></p>
+              <p><strong>Step 1:</strong> Find out what IT support will be provided.</p>
+            </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class ="card h-100 text-center" onclick="access_email_card()">
+              <i class="fa-solid fa-envelope" style="font-size: 3em;"></i>
+              <br>
+              <p><strong>How To Access Email</strong></p>
+              <p><strong>Step 2:</strong> Find out about your IIIT accounts and how to access.</p>
+            </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card h-100 text-center" onclick="password_reset_card()">
+              <i><img src="passwordreset.png" style="width: 3em; height: 3em;" ></i>
+              <br>
+              <p><strong>Password Reset</strong></p>
+              <p><strong>Step 3:</strong> How to reset your password when it is required step by step.</p>
+            </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card h-100 text-center" onclick="vpn_connection_card()">
+              <i><img src="vpn2.jpg" style="width: 4em; height: 4em;"></i>
+              <br>
+              <p><strong>How To Setup VPN Connectivity</strong></p>
+              <p><strong>Step 4:</strong> Get onto your email account and choose how to access messages.</p>
+            </div>
+          </div>
+       </div>  
+      </div>  
+  </div>
+</div>
+
+
+<div class="container It-support-container"  id="It-support"  >
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">IT Support</h1>
+          <div class="line"></div>
+          <br>
+         <p>The IT Service Desk & PC Clinic are the central point of contact for students seeking help, advice and support for all IT related services. Including:</p>
+          <ul>
+            <li>Registration issues – passwords, user accounts</li>
+            <li>Computing advice & information</li>
+            <li>Assistance in using IT services available</li>
+            <li>PC and Mac support service and more…</li>
+          </ul>
+      </div>
+  </div>
+</div>
+<div class="container It-support-container"  id="access-email"  >
+<div class="home-conatiner row justify-content-center text-left" >
+    <div class="col-md-12 col-sm-12 mt-5">
+        <h1 class="heading">How to access email</h1>
+        <div class="line"></div>
+        <br>
+       <h1 style="font-size:18px;font-weight:500">Use IIIT-H email</h1>
+        <p>Set up email applications (clients) installed on your computer or devices to access to your email. You can also log in via the online web portal.</p>
+        <h1 style="font-size:18px;font-weight:500">Using a browser</h1>
+        <p>Go to:<a href=" https://webmail.iiit.ac.in" target="_blank" class="click-here"> https://webmail.iiit.ac.in.</a> You will be redirected to the login.iiit.ac.in CAS login page. Log in with  your Email ID credentials.</p>
+    </div>
+</div>
+</div>
+<div class="container It-support-container"  id="password-Reset">
+<div class="home-conatiner row justify-content-center text-left" >
+    <div class="col-md-12 col-sm-12 mt-5">
+        <h1 class="heading">Password Reset</h1>
+        <div class="line"></div>
+        <br>
+       <h1 style="font-size:30px;font-weight:500">Forgotten Password</h1>
+       <ul>
+        <li>If the password is forgotten then send a mail to <strong>help@iiit.ac.in</strong>  from personal email requesting for the Reset the Password or approach the server room.</li>
+    <li>Once the password is reset we will send you the <strong>temporary</strong> password through mail.</li>   
+    <li>Change the temporary password by visiting <a href="https://passwordreset.iiit.ac.in/" target="_blank" class="click-here"> https://passwordreset.iiit.ac.in/</a></li>
+    <li>Follow the procedure given in <a href="" target="_blank" class="click-here">Reset Password</a> section</li>  
+    <li><strong>Note:</strong> the Current LDAP PASSWORD is temporary password which is sent by us.</li>  
+</ul>
+        <h1 style="font-size:30px;font-weight:500">Reset Password</h1>
+        <p>To reset the password visit <a href=" https://passwordreset.iiit.ac.in/" class="click-here" target="_blank"> https://passwordreset.iiit.ac.in/</a> </p>
+        <p>Click on the <strong>LDAP PASSWORD</strong></p>
+        <ul>
+            <li>Provide the username before <strong>@</strong> from your mail id and select the apt from drop down list</li>
+            <li>Give the Current LDAP Password and after that enter the new password two times</li>
+            <li>Finally click on the Reset password</li>
+        </ul>
+        <p>From then onwards use the new password.</p>
+        <img src="pic.png" >
+        <p><strong>Note :</strong> Strictly follow the Note on the right side of page while entering new password.</p>
+    </div>
+</div>
+</div>
+<div class="container It-support-container"  id="VPN-connection" >
+<div class="home-conatiner row justify-content-center text-left" >
+    <div class="col-md-12 col-sm-12 mt-5">
+        <h1 class="heading">How To Setup VPN Connectivity</h1>
+        <div class="line"></div>
+        <br>
+        <h1 style="font-size:18px;font-weight:500">VPN service will only work when you are trying to use it from outside campus. VPN will not work when you try to use it from inside the network</h1>
+        <p>VPN service will be provided to all IIIT students. To use service it is necessary to install openVPN client on personal machines and laptops. Using VPN all students would be able to connect to any student machine in campus from their home machines. Also ssh, mail and web access to all servers using VPN is allowed. Hence now you can easily access moodle.iiit.ac.in, intranet.iiit.ac.in, mess.iiit.ac.in, etc. even when you are not on campus.</p>
+        <p>For more details please follow the steps mentioned at <a href=" https://vpn.iiit.ac.in/" target="_blank" class="click-here">https://vpn.iiit.ac.in/</a> </h1>
+    <h1 style="font-size:30px;font-weight:500">Instructions for Windows:</h1>
+    <ul>
+        <li>Download OpenVPN configuration and OpenVPN client for windows.</li>
+        <li>Right click the downloaded OpenVPN executable file and choose `Run as administrator’ for installing OpenVPN.</li>
+        <li>Go to folder `C:\Program Files(x86)\openVPN\bin’ and change properties of file `openvpn-gui’. Go to compatibility tab and choose to run as administrator.</li>
+    </ul>
+    <p>Go to Start Menu -> <strong>All Programs</strong> -> <strong>OpenVPN</strong> -> <strong>OpenVPN GUI</strong>. Right click on shortcut for openVPN GUI and again go to properties.</p>
+ <ul>
+  <li>Verify that in compatibility tab, run as administrator option is ticked.</li>
+  <li>Start openVPN GUI from Start <strong>Menu </strong>-> <strong>All Programs</strong> -> <strong>OpenVPN</strong> -> <strong>OpenVPN GUI</strong>. In case icon in notification area is not visible you can change settings so that all notification icons are always shown.</li>
+<li>Go to folder <strong>C:\Program Files(x86)\openVPN</strong>and change permission for `config’ directory such that all users can create and delete files inside that folder. Copy the configuration file to config folder. Alternatively, right click the icon in notification area, choose Import and select the configuration (windows.ovpn) file you have downloaded.</li> 
+<li>Right click the icon in notification area and choose “<strong>Connect</strong>”. Enter complete email address like ‘parth.kolekar@students.iiit.ac.in’ and corresponding email password for connecting.</li>  
+<li>To disconnect you have to select openVPN connection window and use ‘F4’ shortcut key. Alternatively, you can right click the notification icon and choose disconnect.</li>  
+</ul>
+<h1 style="font-size:30px;font-weight:500">Instructions for Linux:</h1>
+<ul>
+<li>For Ubuntu (Download the ovpn file for ubuntu):
+<ul>
+<li><b>Use the configuration file for ubuntu. You need to download it separately.</b></li>
+<li>Install OpenVPN using <strong>`sudo apt install openvpn`</strong>.</li>
+<li>Use command <strong>`sudo openvpn config path_to_your_downloaded_ubuntu.ovpn`</strong> to start OpenVPN tunnel.</li>
+<li>When asked for username and password, please enter your proper IIIT email address as username and email password as password. For example username can be &#8216;parth.kolekar@students.iiit.ac.in&#8217; and password corresponding email password.</li>
+<li>To disconnect just press <strong>Ctrl+C</strong> in terminal in which you have started openVPN client.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Others:
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>Install OpenVPN package using yum, pacman, dnf, synaptic, yast etc. based on which Linux distribution you are using. All standard Linux distriubtion support openVPN installation using standard repositories.</li>
+<li>Now run <strong>`sudo openvpn config path_to_your_downloaded_linux.ovpn`</strong> to start openVPN tunnel.</li>
+<li>When asked for username and password, please enter your proper IIIT email address as username and email password as password. For example username can be &#8216;parth.kolekar@students.iiit.ac.in&#8217; and password corresponding email password.</li>
+<li>After you see <strong>Process Initialization Complete</strong> message, you have to open another terminal as root user.</li>
+<li>In this terminal open file <b>/etc/resolv.conf</b> and add line <b>nameserver 10.4.20.204</b> at top of this file.</li>
+<li>To disconnect just press <b>Ctrl+C </b> in terminal in which you have started openVPN client. Also remove entry for <b>nameserver 10.4.20.204</b> from <b>/etc/resolv.conf</b> file.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><b>Note:</b> For new version of Ubuntu 18.04 and 20.04 Please follow the below steps to configure the VPN. Download New VPN file for new version <a href="https://vpn.iiit.ac.in/secure/For_18_20_ubuntu.ovpn" target="_blank" class="click-here">ubuntu.ovpn</a>
+<ul>
+<li>#apt install resolvconf<br />
+#systemctl start resolvconf<br />
+#systemctl enable resolvconf</li>
+<li>$sudo openvpn &#8211;config ubuntu.ovpn (New file path)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 style="font-size:30px;font-weight:500">Instructions for ipad:</h1>
+<ul>
+<li>Install Tunnelblick click on the download client button on this website or from someother source.</li>
+<li>Run Tunnelblick in case it is not already running. You should see small black circular icon in status bar (usually on top right corner) in case Tunnelblick is running.</li>
+<li>After setup is complete copy file <b>‘generic.ovpn’</b> to openvpn folder. This folder can be created anywhere as per convinience.</li>
+<li>Double click on .ovpn file to add it to tunnelblick.</li>
+<li>Once the configuration has been imported into tunnelblick, launch the application and go into <b>Configurations</b> -><b> Settings</b>. Here, set the<b> “Set DNS/WINS”</b> setting to the <b>“Set nameserver” </b>option.</li>
+<li>To connect you can click on tunnelblick icon on status bar and choose connect option.</li>
+<li>When prompted for username and password, please enter complete IIIT email address as username and corresponding email password as password. For example, ‘parth.kolekar@students.iiit.ac.in’ can be used as username and corresponding email password as password.</li>
+</ul>
+<h1 style="font-size:30px;font-weight:500">Instructions for OS X:</h1>
+<ul>
+<li>Download the app Open VPN Connect by Open VPN Technologies from app store. <a href="https://apps.apple.com/in/app/openvpn-connect" class="click-here" target="_blank">https://apps.apple.com/in/app/openvpn-connect</a></li>
+<li>For the profile, generic will work which can be download from our vpn site <a href="https://vpn.iiit.ac.in/secure/generic.ovpn" class="click-here" target="_blank ">https://vpn.iiit.ac.in/secure/generic.ovpn</a></li> 
+<li>After downloading the file on ipad and then open the file in the openvpn app. Please go through this link <a href="https://hide.me/en/vpnsetup/ios/openvpn/" class="click-here">https://hide.me/en/vpnsetup/ios/openvpn/</a> </li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="container It-support-container"  id="mail-client">
+  <div class="home-conatiner row justify-content-center text-left" >
+      <div class="col-md-12 col-sm-12 mt-5">
+          <h1 class="heading">Mail Client</h1>
+          <div class="line"></div>
+          <br>
+          <h5 class="topsection-title">Mozilla Thunderbird</h5>
+<div class="page-content-section">
+<div class="list-info table-data">
+<table class="table-inner" cellspacing="0">
+<tbody>
+<tr>
+<td class="td-1"><strong>Description</strong></td>
+<td class="td-2">Mozilla Thunderbird is an email client.</td>
+</tr>
+<tr>
+<td class="td-1"><strong>Eligibility</strong></td>
+<td class="td-2">All</td>
+</tr>
+<tr>
+<td class="td-1"><strong>How to setup Thunderbird mail client</strong></td>
+<td class="td-2"><a href="https://self-help.iiit.ac.in/wiki/index.php/How_to_Setup_Thunderbird_client_with_App_Password" class="click-here">Click here</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+</div>
+<h5 class="topsection-title">Outlook Mail Client</h5>
+<div class="page-content-section">
+<div class="list-info table-data">
+<table class="table-inner" cellspacing="0">
+<tbody>
+<tr>
+<td class="td-1"><strong>Description</strong></td>
+<td class="td-2">Outlook Mail Client.</td>
+</tr>
+<tr>
+<td class="td-1"><strong>Eligibility</strong></td>
+<td class="td-2">All</td>
+</tr>
+<tr>
+<td class="td-1"><strong>How to setup Outlook mail client</strong></td>
+<td class="td-2"><a href="https://self-help.iiit.ac.in/wiki/index.php/How_setup_Outlook_email_Client" class="click-here">Click here</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+        
+      </div>
+    </div>
+ 
+</div>
+<script>
+  function menu1(){
+    document.getElementById("mail-client").style.display="none";
+    document.getElementById("getting-started").style.display="block";
+    document.getElementById("It-service").style.display="none";
+    document.getElementById("software").style.display="none";
+
+    document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none"; 
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+
+
+    
+   
+ }
+ function menu2(){
+  document.getElementById("mail-client").style.display="none";
+    document.getElementById("It-service").style.display="block";
+    document.getElementById("getting-started").style.display="none";
+    document.getElementById("software").style.display="none";
+
+    document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none"; 
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+    
+
+}
+
+function menu4(){
+ 
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("It-service").style.display="none";
+  
+  document.getElementById("mail-client").style.display="block";
+
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none"; 
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+}
+function what_to_bring_card() {
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="block";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none"; 
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function Institute_account_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="block";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none"; 
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function getting_online_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="block";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+
+}
+function getting_onto_email_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="block"
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function getting_help_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none"
+  document.getElementById("get-help").style.display="block";
+  document.getElementById("free-help").style.display="none";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function free_help_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="block";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function It_support_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none";
+
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="block";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function access_email_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="block";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function password_reset_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="block";
+  document.getElementById("VPN-connection").style.display="none";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+function vpn_connection_card(){
+  document.getElementById("getting-started").style.display="none";
+  document.getElementById("what-to-bring").style.display="none";
+  document.getElementById("Institute-account").style.display="none";
+  document.getElementById("get-online").style.display="none";
+  document.getElementById("getting-on-email").style.display="none";
+  document.getElementById("get-help").style.display="none";
+  document.getElementById("free-help").style.display="none";
+
+  document.getElementById("It-service").style.display="none";
+  document.getElementById("It-support").style.display="none";
+  document.getElementById("access-email").style.display="none";
+  document.getElementById("password-Reset").style.display="none";
+  document.getElementById("VPN-connection").style.display="block";
+
+  document.getElementById("mail-client").style.display="none";
+
+}
+</script>
+</body>
+</html>
